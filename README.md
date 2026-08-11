@@ -1,42 +1,47 @@
-# Sistema de Chamados de TI — Prefeitura e Secretarias
+# Sistema de Chamados de TI
 
-Este repositório contém a especificação para um sistema de chamados de TI voltado para uso em uma prefeitura e suas secretarias municipais.
+Este projeto é uma aplicação web em React/Vite para gerenciar chamados de TI em um ambiente institucional, com foco em uma interface simples e funcional para solicitantes, técnicos e coordenadores.
 
-## Objetivo
+## O que a aplicação faz
 
-Construir um sistema simples e acessível para servidores com pouca familiaridade com tecnologia e eficiente para técnicos de TI.
+A versão atual do sistema já inclui:
 
-## Perfis de usuário
+- Tela de login com autenticação simulada.
+- Página inicial personalizada conforme o perfil do usuário.
+- Formulário para abertura de novos chamados.
+- Visualização dos chamados próprios para o solicitante.
+- Painel para técnicos com fila de chamados e atualização de status.
+- Painel para coordenadores com visão geral, estatísticas e atribuição de técnicos.
+- Seções de relatórios e configurações.
 
-- **Solicitante**: abre chamados, acompanha status e avalia o atendimento.
-- **Técnico de TI**: recebe chamados, atualiza status e registra solução.
-- **Coordenador/Gestor de TI**: gerencia distribuição, visualiza todos os chamados e gera relatórios.
-- **Administrador do sistema**: gerencia usuários, secretarias, categorias e permissões.
+## Perfis disponíveis
 
-## Requisitos principais
+- **Solicitante**: cria chamados e acompanha o andamento.
+- **Técnico**: recebe chamados atribuídos e altera o status do atendimento.
+- **Coordenador**: acompanha os chamados, distribui demandas e visualiza métricas.
 
-- Cadastro de secretarias, unidades/prédios e ramais configurável.
-- Formulário de abertura de chamado amigável e guiado.
-- Painel do solicitante com status visual, histórico e avaliação.
-- Painel do técnico com fila de chamados por urgência e filtros.
-- Painel do coordenador com visão geral, indicadores e relatórios.
-- Notificações por e-mail ou no sistema, com alertas de SLA.
-- Login institucional com opção de LDAP/SSO.
-- UI limpa, responsiva e acessível.
+## Usuários de exemplo
 
-## Tecnologias sugeridas
+- **Ana Silva** — solicitante
+- **Kauan Felipe** — técnico
+- **Mariana Costa** — coordenadora
 
-- Backend: Node.js/Express, Python/Django ou PHP/Laravel.
-- Banco de dados: PostgreSQL ou MySQL.
-- Frontend: React ou HTML/CSS/JS simples.
-- Autenticação: login institucional (@prefeitura) com LDAP/SSO opcional.
-- Hospedagem: servidor local da prefeitura ou nuvem conforme política de dados.
+Todos os usuários de exemplo utilizam a senha: **Senha123**.
 
-## Arquivos
+## Tecnologias utilizadas
 
-- `SPEC.md` — especificação completa usada para desenvolvimento.
+- React
+- Vite
+- JavaScript
+- CSS moderno para a interface
 
-## Como usar
+## Estrutura principal do projeto
 
-Copie e cole o conteúdo de `SPEC.md` em uma ferramenta de geração de sistemas ou use como briefing para o desenvolvedor.
+- **src/components**: componentes reutilizáveis da interface.
+- **src/pages**: páginas principais do sistema.
+- **src/layouts**: layouts de autenticação e dashboard.
+- **src/routes**: configuração das rotas da aplicação.
 
+## Observação
+
+Este projeto atualmente utiliza dados simulados em memória, sendo uma versão demonstrativa do fluxo de atendimento de TI.
